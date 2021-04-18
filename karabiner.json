@@ -16,6 +16,58 @@
         },
         "rules": [
           {
+            "description": "Mission Control",
+            "manipulators": [
+              {
+                "conditions": [
+                  {
+                    "identifiers": [
+                      {
+                        "vendor_id": 5426
+                      }
+                    ],
+                    "type": "device_if"
+                  }
+                ],
+                "from": {
+                  "key_code": "1"
+                },
+                "to": [
+                  {
+                    "key_code": "mission_control"
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "Enter or Return",
+            "manipulators": [
+              {
+                "conditions": [
+                  {
+                    "identifiers": [
+                      {
+                        "vendor_id": 5426
+                      }
+                    ],
+                    "type": "device_if"
+                  }
+                ],
+                "from": {
+                  "key_code": "hyphen"
+                },
+                "to": [
+                  {
+                    "key_code": "return_or_enter"
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
             "description": "Move right screen",
             "manipulators": [
               {
@@ -23,7 +75,6 @@
                   {
                     "identifiers": [
                       {
-                        "product_id": 144,
                         "vendor_id": 5426
                       }
                     ],
@@ -51,7 +102,6 @@
                   {
                     "identifiers": [
                       {
-                        "product_id": 144,
                         "vendor_id": 5426
                       }
                     ],
@@ -79,7 +129,6 @@
                   {
                     "identifiers": [
                       {
-                        "product_id": 144,
                         "vendor_id": 5426
                       }
                     ],
@@ -107,7 +156,6 @@
                   {
                     "identifiers": [
                       {
-                        "product_id": 144,
                         "vendor_id": 5426
                       }
                     ],
@@ -135,7 +183,6 @@
                   {
                     "identifiers": [
                       {
-                        "product_id": 144,
                         "vendor_id": 5426
                       }
                     ],
@@ -163,7 +210,6 @@
                   {
                     "identifiers": [
                       {
-                        "product_id": 144,
                         "vendor_id": 5426
                       }
                     ],
@@ -191,7 +237,6 @@
                   {
                     "identifiers": [
                       {
-                        "product_id": 144,
                         "vendor_id": 5426
                       }
                     ],
@@ -219,7 +264,6 @@
                   {
                     "identifiers": [
                       {
-                        "product_id": 144,
                         "vendor_id": 5426
                       }
                     ],
@@ -247,7 +291,6 @@
                   {
                     "identifiers": [
                       {
-                        "product_id": 144,
                         "vendor_id": 5426
                       }
                     ],
@@ -275,7 +318,6 @@
                   {
                     "identifiers": [
                       {
-                        "product_id": 144,
                         "vendor_id": 5426
                       }
                     ],
@@ -696,74 +738,6 @@
           "disable_built_in_keyboard_if_exists": false,
           "fn_function_keys": [],
           "identifiers": {
-            "is_keyboard": true,
-            "is_pointing_device": false,
-            "product_id": 143,
-            "vendor_id": 5426
-          },
-          "ignore": false,
-          "manipulate_caps_lock_led": false,
-          "simple_modifications": [
-            {
-              "from": {
-                "key_code": "1"
-              },
-              "to": [
-                {
-                  "apple_vendor_keyboard_key_code": "mission_control"
-                }
-              ]
-            },
-            {
-              "from": {
-                "key_code": "hyphen"
-              },
-              "to": [
-                {
-                  "key_code": "return_or_enter"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "disable_built_in_keyboard_if_exists": false,
-          "fn_function_keys": [],
-          "identifiers": {
-            "is_keyboard": true,
-            "is_pointing_device": false,
-            "product_id": 144,
-            "vendor_id": 5426
-          },
-          "ignore": false,
-          "manipulate_caps_lock_led": false,
-          "simple_modifications": [
-            {
-              "from": {
-                "key_code": "1"
-              },
-              "to": [
-                {
-                  "apple_vendor_keyboard_key_code": "mission_control"
-                }
-              ]
-            },
-            {
-              "from": {
-                "key_code": "hyphen"
-              },
-              "to": [
-                {
-                  "key_code": "return_or_enter"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "disable_built_in_keyboard_if_exists": false,
-          "fn_function_keys": [],
-          "identifiers": {
             "is_keyboard": false,
             "is_pointing_device": true,
             "product_id": 144,
@@ -777,74 +751,6 @@
           "disable_built_in_keyboard_if_exists": false,
           "fn_function_keys": [],
           "identifiers": {
-            "is_keyboard": true,
-            "is_pointing_device": true,
-            "product_id": 144,
-            "vendor_id": 5426
-          },
-          "ignore": false,
-          "manipulate_caps_lock_led": false,
-          "simple_modifications": [
-            {
-              "from": {
-                "key_code": "1"
-              },
-              "to": [
-                {
-                  "apple_vendor_keyboard_key_code": "mission_control"
-                }
-              ]
-            },
-            {
-              "from": {
-                "key_code": "hyphen"
-              },
-              "to": [
-                {
-                  "key_code": "return_or_enter"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "disable_built_in_keyboard_if_exists": false,
-          "fn_function_keys": [],
-          "identifiers": {
-            "is_keyboard": true,
-            "is_pointing_device": false,
-            "product_id": 144,
-            "vendor_id": 5426
-          },
-          "ignore": false,
-          "manipulate_caps_lock_led": false,
-          "simple_modifications": [
-            {
-              "from": {
-                "key_code": "1"
-              },
-              "to": [
-                {
-                  "apple_vendor_keyboard_key_code": "mission_control"
-                }
-              ]
-            },
-            {
-              "from": {
-                "key_code": "hyphen"
-              },
-              "to": [
-                {
-                  "key_code": "return_or_enter"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "disable_built_in_keyboard_if_exists": false,
-          "fn_function_keys": [],
-          "identifiers": {
             "is_keyboard": false,
             "is_pointing_device": true,
             "product_id": 144,
@@ -859,32 +765,21 @@
           "fn_function_keys": [],
           "identifiers": {
             "is_keyboard": true,
-            "is_pointing_device": true,
+            "is_pointing_device": false,
             "product_id": 144,
             "vendor_id": 5426
           },
           "ignore": false,
           "manipulate_caps_lock_led": false,
-          "simple_modifications": [
-            {
-              "from": {
-                "key_code": "1"
-              },
-              "to": [
-                {
-                  "apple_vendor_keyboard_key_code": "mission_control"
-                }
-              ]
-            }
-          ]
+          "simple_modifications": []
         },
         {
           "disable_built_in_keyboard_if_exists": false,
           "fn_function_keys": [],
           "identifiers": {
             "is_keyboard": true,
-            "is_pointing_device": false,
-            "product_id": 144,
+            "is_pointing_device": true,
+            "product_id": 146,
             "vendor_id": 5426
           },
           "ignore": false,
